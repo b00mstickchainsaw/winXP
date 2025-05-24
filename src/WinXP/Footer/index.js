@@ -123,53 +123,30 @@ const Container = styled.footer`
   height: 30px;
   background: linear-gradient(
     to bottom,
-    #1f2f86 0,
-    #3165c4 3%,
-    #3682e5 6%,
-    #4490e6 10%,
-    #3883e5 12%,
-    #2b71e0 15%,
-    #2663da 18%,
-    #235bd6 20%,
-    #2258d5 23%,
-    #2157d6 38%,
-    #245ddb 54%,
-    #2562df 86%,
-    #245fdc 89%,
-    #2158d4 92%,
-    #1d4ec0 95%,
-    #1941a5 98%
+    #1a1a1a 0%,
+    #2d2d2d 100%
   );
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
   display: flex;
+  
   .footer__items.left {
     height: 100%;
     flex: 1;
     overflow: hidden;
   }
+  
   .footer__items.right {
-    background-color: #0b77e9;
+    background-color: #1a1a1a;
     flex-shrink: 0;
     background: linear-gradient(
       to bottom,
-      #0c59b9 1%,
-      #139ee9 6%,
-      #18b5f2 10%,
-      #139beb 14%,
-      #1290e8 19%,
-      #0d8dea 63%,
-      #0d9ff1 81%,
-      #0f9eed 88%,
-      #119be9 91%,
-      #1392e2 94%,
-      #137ed7 97%,
-      #095bc9 100%
+      #2d2d2d 0%,
+      #1a1a1a 100%
     );
-    border-left: 1px solid #1042af;
-    box-shadow: inset 1px 0 1px #18bbff;
+    border-left: 1px solid #333;
     padding: 0 10px;
     margin-left: 10px;
   }

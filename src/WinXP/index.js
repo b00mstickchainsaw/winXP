@@ -338,6 +338,7 @@ const powerOffAnimation = keyframes`
     filter: brightness(0.6) grayscale(1);
   }
 `;
+
 const animation = {
   [POWER_STATE.START]: '',
   [POWER_STATE.TURN_OFF]: powerOffAnimation,
@@ -350,11 +351,22 @@ const Container = styled.div`
   height: 100%;
   overflow: hidden;
   position: relative;
-  background: url(https://i.imgur.com/Zk6TR5k.jpg) no-repeat center center fixed;
+  background: url('https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center fixed;
   background-size: cover;
   animation: ${({ state }) => animation[state]} 5s forwards;
   *:not(input):not(textarea) {
     user-select: none;
+  }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
   }
 `;
 
